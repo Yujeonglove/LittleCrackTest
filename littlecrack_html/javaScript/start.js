@@ -17,18 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function setResult(){
-    let point = calResult();
-    const resultName = document.querySelector('.resultname');
-    resultName.innerHTML = infoList[point].name;
+    // 최대값을 가진 타입 인덱스 찾기
+    const maxValueIndex = select.indexOf(Math.max(...select));
 
-    var resultImg = document.createElement('img');
+    // infoList에서 해당 인덱스의 캐릭터 이름을 가져오기
+    const resultName = document.querySelector('.resultname');
+    resultName.innerHTML = infoList[maxValueIndex].name;
+
+    // 결과 이미지 설정
     const imgDiv = document.querySelector('#resultImg');
-    // var imgURL = 'img/img-' + point + '.jpg';
-    resultImg.src = imgURL;
-    resultImg.alt = point;
+    imgDiv.innerHTML = '';  // 기존 이미지 초기화
+    const resultImg = document.createElement('img');
+    resultImg.src = './img/img-' + maxValueIndex + '.jpg';  // 이미지 경로 설정
+    resultImg.alt = infoList[maxValueIndex].name;
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
-  }
+}
 
   function goResult(){
     qna.style.WebkitAnimation = "fadeOut 1s";

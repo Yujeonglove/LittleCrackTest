@@ -1,0 +1,198 @@
+/* 
+스토리 페이지에 인터랙션 주기
+스토리 흐름에 따라 배경 변화
+스크롤하면 배경 변화되도록
+깜깜한 밤에서 불빛이 환한 선셋빌리지의 오두막 내부로
+*/
+
+#question-page, #result-page {
+  display: none;
+}
+
+@font-face {
+  font-family: 'LeeSeoyun';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: orange;
+  font-family: 'LeeSeoyun';
+}
+
+/* 스토리 페이지 */
+
+#story-page {
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: 20px;
+  margin-top: 70px;
+  padding: 20px 20px 40px 20px;
+}
+
+#story-page > h1 {
+  font-size: 40px;
+}
+
+#story-page > p {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+#story-page > button {
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-family: 'LeeSeoyun';
+  transition-duration: 1s;
+  margin-top: 50px;
+}
+
+#story-page > button:hover {
+  transform: translateY(-15px);
+}
+
+/* 문제 페이지 */
+
+#question-page {
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: 20px;
+  margin-top: 70px;
+  padding: 20px 20px 40px 20px;
+}
+
+.questionBox {
+  /* background-color: #e7f67f; */
+  text-align: center;
+  border-radius: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  /* border: 2px solid black; */
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.answerList{
+  background-color: rgb(255, 225, 169);
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  border-radius: 50px;
+  border: none;
+  margin-top: 18px;
+  padding: 15px;
+  font-family: 'LeeSeoyun';
+}
+
+.answerList:hover, .answerList:focus{
+  background-color: #89c882;
+  color: whitesmoke;
+}
+
+.status{
+  height: 20px;
+  border-radius: 25px;
+  width: 80%;
+  background-color: rgb(228, 227, 227);
+  text-align: center;
+  /* border: 1px solid rgb(114, 101, 80); */
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-back {
+  margin-right: 90%;
+  margin-bottom: 10px;
+}
+
+.button-back > button {
+  font-size: 20px;
+  color: white;
+  background-color: orange;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+
+.statusBar{
+  height: 100%;
+  border-radius: 25px;
+  background-color: rgb(255, 196, 0);
+}
+
+.statusText {
+  font-size: 16px;
+  margin-left: 75%;
+  margin-bottom: 5px;
+  color: #717070;
+}
+
+/* 결과 페이지 */
+
+#result-page {
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: 20px;
+  margin-top: 70px;
+  padding: 20px 20px 40px 20px;
+}
+
+#resultImg{
+  width: auto;
+}
+
+#result-page > #button-restart > button {
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-family: 'LeeSeoyun';
+  margin-top: 20px;
+}
+
+#result-page > #button-follow > button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-family: 'LeeSeoyun';
+  margin-top: 40px;
+}
+
+/* 푸터 텍스트 */
+
+#footer {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer > button {
+  width: 200px;
+  border: none;
+  height: 80px;
+}

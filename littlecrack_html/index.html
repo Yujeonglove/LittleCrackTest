@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="autor" content="리틀크랙">
+  <meta name="keywords" content="심리 테스트">
+  <meta name="description" content="나와 비슷한 리틀크랙 캐릭터를 심리 테스트를 통해 알아보자">
+
+  <title>리틀크랙 팝업스토어 심리테스트</title>
+  <link rel="stylesheet" href="./css/test.css">
+  <link re="stylesheet" href="./css/frames.css">
+</head>
+<body>
+  <div class="container">
+    <!--스토리 페이지-->
+    <section id="story-page" class="mx-auto mt-5 pt-4 pb-5 px-3">
+      <h1>리틀크랙 선셋빌리지 <br> 일루미네이션 초대장</h1>
+
+      <p class="mt-3 mx-3">
+        루돌프가 선셋빌리지에 오게 된 스토리 소개 <br>
+        크랙이들의 크리스마스 파티에 당신을 초대합니다 <br>
+        초대장을 만들기 위해 당신의 정보를 알아야 합니다 <br>
+        테스트를 통해 당신이 어떤 유형의 사람인지 파악해 보세요
+      </p>
+      <button type="button" class="start-button btn btn-success mt-3" onclick="begin()">
+        테스트 시작하기
+      </button>
+    </section>
+    <!--문제 페이지-->
+    <section id="question-page">
+      <div class="button-back">
+        <button type="button" onclick="goBack();">⬅</button>
+      </div>
+      <div class="statusText"></div>
+      <div class="status mt-5 mx-auto">
+        <div class="statusBar"></div>
+      </div>
+      <div class="questionBox my-5 py-3 ms-auto"></div>
+      <div class="answerBox"></div>
+    </section>
+    <!--결과 페이지-->
+    <section id="result-page">
+      <h1>당신과 비슷한 유형의 리틀크랙 캐릭터는?</h1>
+      <div id="resultImg" class="col-lg-6 col-md-8 col-sm-10 pt-4 mx-auto">
+                                        
+      </div>
+      <div id="button-follow">
+        <button type="button" class="btn btn-success mt-3" onclick="window.open('https://www.instagram.com/littlecrack_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==')">크랙이들의 소식 보러가기</button>
+      </div>   
+      <div id="button-restart">
+        <button type="button" onclick="begin()">다시 검사하기 ⟲</button>
+      </div>    
+    </section>
+    <script src="./javaScript/test.js" charset="UTF-8"></script>
+    <script src="./javaScript/start.js" charset="UTF-8"></script>
+  </div>
+  <div id="footer">
+    <h3 class="footer-text">presented by</h3>
+    <button class="footer-logo"><img src="/littlecrack_html/img/littlecrack_logo.png"></button>
+  </div>
+</body>
+</html>

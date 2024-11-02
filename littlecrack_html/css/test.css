@@ -37,12 +37,21 @@ body {
 #story-page > h1 {
   font-size: 40px;
   color: #FCBB43;
-  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
   margin-top: 20px;
+  animation: colorChange 2s infinite;
 }
 
+.char.red {
+  color: #DB4640; /* 빨간색 */
+}
+
+.char.green {
+  color: #62ad87; /* 초록색 */
+}
+
+
 #story-page > .thumbnail {
-  
+
   width: 300px;
 }
 

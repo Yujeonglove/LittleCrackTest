@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: #005244;
+  background-color: #2A2939;
   font-family: 'LeeSeoyun';
 }
 
@@ -35,7 +35,14 @@ body {
 }
 
 #story-page > h1 {
-  font-size: 40px;
+  font-size: 60px;
+  color: #FCBB43;
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+  margin-top: 20px;
+}
+
+#story-page > .thumbnail {
+  width: 500px;
 }
 
 #story-page > p {
@@ -46,13 +53,13 @@ body {
 #story-page > button {
   font-size: 20px;
   padding: 10px 15px;
-  background-color: #62ad87;
+  background-color: #DB4640;
   color: #fff;
   border: none;
   border-radius: 15px;
   font-family: 'LeeSeoyun';
   transition-duration: 1s;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #story-page > button:hover {
@@ -90,7 +97,9 @@ body {
   width: 100%;
   font-size: 24px;
   border-radius: 50px;
-  border: none;
+  /* border: 3px solid #DB4640; */
+  /* border: none; */
+  border: 7px dotted #DB4640;
   margin-top: 18px;
   padding: 15px;
   font-family: 'LeeSeoyun';
@@ -122,7 +131,7 @@ body {
 .button-back > button {
   font-size: 20px;
   color: white;
-  background-color: #005244;
+  background-color: #62ad87;
   border: none;
   padding: 5px 10px;
   border-radius: 100px;
@@ -131,7 +140,7 @@ body {
 .statusBar{
   height: 100%;
   border-radius: 25px;
-  background-color: #62ad87;
+  background-color: #DB4640;
 }
 
 .statusText {
@@ -152,6 +161,10 @@ body {
   border: 20px;
   margin-top: 50px;
   padding: 20px 20px 40px 20px;
+}
+
+#result-page > h1 {
+  font-size: 40px;
 }
 
 #resultImg{
@@ -198,8 +211,4 @@ body {
 
 #footer > a {
   width: 200px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 66f3bb468bd41d2ab2e3869f33e536cae2c7bd49

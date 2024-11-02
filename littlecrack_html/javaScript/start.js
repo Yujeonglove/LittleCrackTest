@@ -16,22 +16,30 @@ document.addEventListener("DOMContentLoaded", function () {
     return result;
   }
 
-  function setResult(){
-    // 최대값을 가진 타입 인덱스 찾기
+  function setResult() {
     const maxValueIndex = select.indexOf(Math.max(...select));
 
-    // infoList에서 해당 인덱스의 캐릭터 이름을 가져오기
+    // infoList 배열이 잘 정의되었는지 확인합니다
+    if (!infoList || !infoList[maxValueIndex]) {
+        console.error("infoList 배열이 정의되지 않았거나, maxValueIndex를 찾을 수 없습니다.");
+        return;
+    }
+
+    // 결과 텍스트 업데이트
     const resultName = document.querySelector('.resultname');
     resultName.innerHTML = infoList[maxValueIndex].name;
 
-    // 결과 이미지 설정
+    // 결과 이미지 업데이트
     const imgDiv = document.querySelector('#resultImg');
-    imgDiv.innerHTML = '';  // 기존 이미지 초기화
+    imgDiv.innerHTML = '';  // 기존 이미지를 지우기 위해 초기화
     const resultImg = document.createElement('img');
-    resultImg.src = './img/img-' + maxValueIndex + '.jpg';  // 이미지 경로 설정
+    resultImg.src = `./img/img-${maxValueIndex}.jpg`;  // 경로 설정
     resultImg.alt = infoList[maxValueIndex].name;
     resultImg.classList.add('img-fluid');
     imgDiv.appendChild(resultImg);
+
+    // 이미지가 잘 들어갔는지 확인
+    console.log("결과 이미지가 표시되었습니다.");
 }
 
   function goResult(){

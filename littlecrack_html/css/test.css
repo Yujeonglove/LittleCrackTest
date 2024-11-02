@@ -35,14 +35,15 @@ body {
 }
 
 #story-page > h1 {
-  font-size: 60px;
+  font-size: 40px;
   color: #FCBB43;
   filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
   margin-top: 20px;
 }
 
 #story-page > .thumbnail {
-  width: 500px;
+  
+  width: 300px;
 }
 
 #story-page > p {
@@ -174,7 +175,7 @@ body {
 
 #result-page > #button-restart > button {
   font-size: 20px;
-  padding: 10px 15px;
+  padding: 10px 40px;
   background-color: #62ad87;
   color: #fff;
   border: none;
@@ -185,8 +186,8 @@ body {
 
 #result-page > #button-follow > button {
   font-size: 20px;
-  padding: 10px;
-  background-color: #62ad87;
+  padding: 10px 15px;
+  background-color: #DB4640;
   color: #fff;
   border: none;
   border-radius: 15px;

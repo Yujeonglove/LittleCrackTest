@@ -177,9 +177,19 @@ body {
   font-size: 40px;
 }
 
-#resultImg{
-  width: auto;
-  height: auto;
+#resultImg {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.result-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.resultname {
+  display: none;
 }
 
 #result-page > #button-restart > button {
